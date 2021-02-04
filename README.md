@@ -8,6 +8,12 @@
 
 - [CVE-2021-26294](https://github.com/E3SEC/AfterLogic/blob/main/CVE-2021-26294-exposure-of-sensitive-information-vulnerability.md) - Exposure of sensitive information to an unauthorized actor with path traversal on AfterLogic Aurora & WebMail Pro WebDAV EndPoint
 
+## **Authors :**
+
+* Emre KELEŞ - @emrekeles on twitter [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/emrekeles.svg?style=social&label=Follow%20%40emrekeles)](https://twitter.com/emrekeles)
+* Emircan YILDIZ - @scorpsec on twitter [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/scorpsec.svg?style=social&label=Follow%20%40scorpsec)](https://twitter.com/scorpsec)
+* Halil Emre ÖZEN - @halilemreozen on twitter [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/halilemreozen.svg?style=social&label=Follow%20%40halilemreozen)](https://twitter.com/halilemreozen)
+
 ## Who is AfterLogic?
 > Afterlogic Corp. is an award-winning technological company creating world-leading email and telecommunications components, software and platforms since 2002
 
