@@ -21,6 +21,8 @@ Source : [AfterLogic Home Page](https://afterlogic.com/)
 
 ## Who using AfterLogic Products?
 
+## Client Portfolio
+
 > ### Universities
 > - Carnegie Mellon University
 > - CERN
@@ -32,34 +34,53 @@ Source : [AfterLogic Home Page](https://afterlogic.com/)
 
 > ### Companies
 > - AirBus
+> - Akna
 > - Alcatel-Lucent
 > - AOL
 > - AT&T
+> - Ballou Internet Services
 > - Bank of Montreal
 > - Bechtel
 > - Bell Mobility
+> - Berkeley University
 > - Bosch
 > - British Transport Police
+> - Carnegie Mellon University
+> - Cellcom Israel
 > - Centers for Disease Control and Prevention
+> - CentiaCRM
+> - CERN
 > - Chamber of Deputies
 > - Cisco Systems
 > - CMA CGM
+> - ColombiaHosting
+> - Compliance
 > - Datawatch
+> - Delaware Technical & Community College
 > - Dell
+> - Diocese de Monaco
+> - Edinburgh University
+> - European Molecular Biology Laboratory
 > - Federal State Institution Russian State Library
 > - Freescale Semiconductor
 > - Fuji Xerox
+> - GCT
 > - General Electric
 > - Go Daddy
-> - GoDaddy
+> - Government of Latvia
 > - Government of Romania
 > - Government of Saskatchewan, Canada
 > - Government of South Australia
 > - Government Organizations
+> - Harvard University
 > - Hewlett-Packard
 > - HITACHI
+> - Hosting Australia
+> - Iberweb
 > - IBM
+> - Insurance House Company
 > - Intuit Inc.
+> - iShare Medical
 > - Konica Minolta
 > - Lockheed Martin
 > - LSI Logic
@@ -67,12 +88,16 @@ Source : [AfterLogic Home Page](https://afterlogic.com/)
 > - Mchost
 > - McKesson
 > - Miele
+> - Mogo Finance
 > - MOTOROLA
 > - National Blood Service
 > - NEC Corporation
+> - Netcore
 > - New Zealand Parliament
+> - Nuevo
 > - Pfizer
 > - Philips
+> - Public Internet
 > - Rackspace
 > - Rackspace 
 > - Razorfish
@@ -81,7 +106,10 @@ Source : [AfterLogic Home Page](https://afterlogic.com/)
 > - Siemens AG
 > - Sony Ericsson
 > - Sophos
+> - SpaceLink
 > - Stack Overflow
+> - Sweden Democrats
+> - Synchronous ERP
 > - T-Mobile Deutschland
 > - Telecom Scandinavia A/S
 > - The Bank of New York
@@ -101,7 +129,40 @@ Source : [AfterLogic Home Page](https://afterlogic.com/)
 > - Xerox
 > - Yandex
 > - Yippy
-> - Also: American Psychiatric Association, Apostle Paul Ministries, Cinemark, DevASP.com, Doctors.net.uk, Dow Jones, Fujicolor, Horizon Bank, Illinois Criminal Justice Authority, Insight, ManTech International Corporation, Military Parts Corp, National Marrow Donor Program, Neste Oil, Network America, Propaganda Promotions, PUKKAspace web hosting, Quest Software, SADAFCO, Software Spectrum, Trend Micro, Trident Systems, USOnline, VisionAIR, Worldwide Church of God
-> and many others
+> - York University
+> - Zimmer Intermed
 
-Source : [AfterLogic Clients Page](https://afterlogic.com/clients)
+> Also
+
+> - American Psychiatric Association
+> - Apostle Paul Ministries
+> - Cinemark
+> - DevASP.com
+> - Doctors.net.uk
+> - Dow Jones
+> - Fujicolor
+> - Horizon Bank
+> - Illinois Criminal Justice Authority
+> - Insight
+> - ManTech International Corporation
+> - Military Parts Corp
+> - National Marrow Donor Program
+> - Neste Oil
+> - Network America
+> - Propaganda Promotions
+> - PUKKAspace web hosting
+> - Quest Software
+> - SADAFCO
+> - Software Spectrum
+> - Trend Micro
+> - Trident Systems
+> - USOnline
+> - VisionAIR
+> - Worldwide Church of God
+
+> - and many others
+
+Sources :
+ - [AfterLogic Clients Page](https://afterlogic.com/clients)
+ - [AfterLogic WebMail PRO Page](https://afterlogic.com/webmail-client)
+ - [AfterLogic Aurora Page](https://afterlogic.com/aurora)
