@@ -98,4 +98,4 @@ Source : [AfterLogic Home Page](https://afterlogic.com/)
 > - Also: American Psychiatric Association, Apostle Paul Ministries, Cinemark, DevASP.com, Doctors.net.uk, Dow Jones, Fujicolor, Horizon Bank, Illinois Criminal Justice Authority, Insight, ManTech International Corporation, Military Parts Corp, National Marrow Donor Program, Neste Oil, Network America, Propaganda Promotions, PUKKAspace web hosting, Quest Software, SADAFCO, Software Spectrum, Trend Micro, Trident Systems, USOnline, VisionAIR, Worldwide Church of God
 > and many others
 
-Source : [AfterLogic Home Page](https://afterlogic.com/)
+Source : [AfterLogic Clients Page](https://afterlogic.com/clients)
