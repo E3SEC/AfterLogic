@@ -3,10 +3,10 @@
 - [CVE-2021-26292](https://github.com/E3SEC/AfterLogic/blob/main/CVE-2021-26292-full-path-disclosure-vulnerability.md) - Public Full Path Disclosure on AfterLogic Aurora & WebMail Pro WebDAV EndPoint
 
 
-- [CVE-2021-26293](https://github.com/E3SEC/AfterLogic/blob/main/CVE-2021-26293-rce-via-public-unrestricted-file-upload-vulnerability.md) - RCE via Public unrestricted upload with path traversal on AfterLogic Aurora & WebMail Pro WebDAV EndPoint
+- [CVE-2021-26293](https://github.com/E3SEC/AfterLogic/blob/main/CVE-2021-26293-rce-via-public-unrestricted-file-upload-vulnerability.md) - [9.8 CRITICAL] RCE via Public unrestricted upload with path traversal on AfterLogic Aurora & WebMail Pro WebDAV EndPoint
 
 
-- [CVE-2021-26294](https://github.com/E3SEC/AfterLogic/blob/main/CVE-2021-26294-exposure-of-sensitive-information-vulnerability.md) - Exposure of sensitive information to an unauthorized actor with path traversal on AfterLogic Aurora & WebMail Pro WebDAV EndPoint
+- [CVE-2021-26294](https://github.com/E3SEC/AfterLogic/blob/main/CVE-2021-26294-exposure-of-sensitive-information-vulnerability.md) - [7.5 HIGH] Exposure of sensitive information to an unauthorized actor with path traversal on AfterLogic Aurora & WebMail Pro WebDAV EndPoint
 
 ## **Authors :**
 
